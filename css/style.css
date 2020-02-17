@@ -412,3 +412,44 @@ footer p{
 	padding-bottom: 20px;
 	margin-top: 60px;
 }
+
+
+
+
+/*------------access.html---------------*/
+#access header{
+	height: 120px;
+	animation: none;	
+}
+
+#access hr{
+	margin-top: 60px;
+	width: 1160px;
+	margin-right: auto;
+	margin-left: 0;
+}
+
+
+#access .inner-box{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#access .access h3{
+	margin-top: 60px;
+	text-align: left;
+}
+
+#access .access h3 span:after{
+	margin: 0;
+}
+
+#access .access{
+	margin-top: 160px;
+	padding: 0;
+}
+
+
+.access-title{
+	font-size: 2.4rem;
+}
