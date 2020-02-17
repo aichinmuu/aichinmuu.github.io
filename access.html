@@ -19,7 +19,7 @@
 	
 </head>
 
-<body>
+<body id="access">
 <header>
    <div class="wrapper">
     <div class="header-inner">
@@ -35,29 +35,15 @@
           <ul>
             <li><a href="#">about</a></li>
             <li><a href="#">menu</a></li>
-            <li><a href="#">access</a></li>
+            <li><a href="access.html">access</a></li>
           </ul>
         </nav>
         </div>
    	 </div>
 
-  	 <div class="main-text">
-		 <h2>Welcome.</h2>
-		 <p class="main-copy">早朝6時からオープン！！<br>
-			ランチタイムには、定番のパスタやカレーなど<br>
-			日替わりランチがおすすめ！！</p>
-		 <p class="sub-copy">西新宿だから交通の便もよく、お集まり・ショッピングに最適！<br>
-			お二人だけのランチタイムにいかがですか。</p>
-  	 </div>
   	 
 	</div>
-	<div class="main-carousel">
-			<div><img src="images/main-img.jpg" alt="店内風景"/></div>
-			<div><img src="images/main-img.jpg" alt="店内風景"/></div>
-			<div><img src="images/main-img.jpg" alt="店内風景"/></div>
-			<div><img src="images/main-img.jpg" alt="店内風景"/></div>
-
-	</div>
+  
   </header>	
   
 
@@ -66,74 +52,8 @@
   
   
 <main>
-	<section class="news fadein">
-      <h3><span>news</span><br>お知らせ</h3>
-      <div class="inner-box">
-        
-        
-        <figure><img src="images/news-img.jpg" alt="コーヒーの写真"/></figure>
-        
-        <ul class="news-ul">
-        	<li>2019年10月11日　　　新規サイトオープン企画<br><span>Webサイトを見て特製ケーキをもらおう！</span></li>
-        	<li>2019年10月11日　　　新作マカロン登場！！</li>
-        	<li>2019年10月10日　　　お待たせしました！カフェ・ド・パリ<br><span>Webサイトをオープンいたしました。</span></li>
-        	<li class="more-btn"><a href="#"><img src="images/more.jpg" alt="続きを見る"/></a></li>
-        </ul>
-        
-        
-      </div>
-      
-      
-      
-  </section>
 	
-	
-	<section class="about fadein">
-      <div class="inner-box">
-        <h3><span>about</span><br>カフェ・ド・パリとは</h3>
-      
-		
-		
-	  <p class="about-p">
-	  	都会の生活に寄り添う憩いの空間をコンセプトに<br>2019年4月にオープンしたCafe de Paris。<br><br>
-
-都会の中の日常と切っても切り離せない。<br>そんなお客様の日常を支える場所であり続けたいと願っております。<br><br>
-
-モーニングもランチも価格帯はリーズナブルに。<br>ボッサノヴァが流れるゆったりとした生活空間をご堪能ください。
-	  </p>
-	  
-		<p class="more-btn"><a href="#"><img src="images/more.jpg" alt="続きを見る"/></a></p>
-	  </div>
-	</section>
-	
-	
-	<section class="pickup-menu fadein">
-      <div class="inner-box">
-        <h3><span>pickup menu</span><br>おすすめメニュー</h3>
-        
-        <p>ヘルシープレートで女性にもやさしい。<br>
-一日の始まりやお昼時の一品にいかがですか｡</p>
-     
-     <div class="plates">
-     	<figure class="morning">
-     		<img src="images/morning-img.png" alt="モーニングセット"/>
-     		<figcaption>ソーセージエッグプレート ¥540</figcaption>
-     	</figure>
-		<figure class="lunch">
-    		<img src="images/lunch-img.png" alt="日替わりランチ"/>
-     		<figcaption>定番ナポリタン ¥870</figcaption>
-     	</figure>
-     </div>
-     
-     <p class="more-btn"><a href="#"><img src="images/more.jpg" alt="続きを見る"/></a></p>
-
-     
-      </div>
-      
-      
-  </section>
-	
-	<section class="access fadein">
+	<section class="access">
       <div class="inner-box">
         <h3><span>access</span><br>アクセス</h3>
         
@@ -249,30 +169,6 @@ function initMap() {
   var marker = new google.maps.Marker(markerOptions);
 }
 
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.fadein').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object - 300){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});	
-	
 </script>
 	
 </body>
