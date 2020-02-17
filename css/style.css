@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+html
+{
+    font-size: 62.5%; 
+	
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem; 
+    line-height: 1.6;
+	letter-spacing: .05rem;
+	color: #2e2e2e;
+    background-color: #ffffff;
+	border-left: 16px solid #2e2e2e;
+}
+
+a{
+	text-decoration: none;
+	color: #2e2e2e; 
+}
+
+a:hover{
+	opacity: 0.7;
+	transition: 0.3s ease;
+}
+
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+img{
+	line-height: 0;
+	width: 100%;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.center{
+	text-align: center;
+}
+
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+.inner-box{
+	width: 1120px;
+	margin: 0 auto;
+}
+
+/*  animation*/
+
+header {
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+
+.fadein
+{
+    opacity:0;
+}
+
+/*header*/
+
+header{
+	box-sizing: border-box;
+	padding-top: 78px;
+	position: relative;
+	height: 900px;
+}
+
+.header-inner{
+	display: flex;	
+	justify-content: space-between;
+}
+
+h1{
+	width: 255px;
+	line-height: 24px;
+	font-size: 1.2rem;
+}
+
+.facebook, .instagram{
+	width: 33px;
+	margin-left: 20px;
+}
+
+.sns{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav-right{
+	margin-right: 40px;
+}
+
+nav{
+	font-size: 1.6rem;
+	margin-top: 30px;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul li{
+	margin-left: 40px;
+	position: relative;
+}
+
+nav ul li:after{
+	display: block;
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 1px;
+	left: 0;
+	bottom: -8px;
+	background-color: #e4e0de;
+}
+
+/*main-view*/
+
+.main-carousel{
+	width: 1040px;
+	position: absolute;
+	z-index: -1;
+	top: 268px;
+	right: 0;
+}
+
+.slick-dotted.slick-slider {
+    margin: 0;
+}
+
+.slick-dots{
+	bottom: 24px;
+	right: 0;
+	text-align: left;
+	width: calc(50vw + 560px - 8px);
+}
+
+.slick-dots li{
+	margin: 0;
+	text-align: left;
+}
+
+.slick-dots li button:before{
+	font-size: 16px;
+}
+
+h2{
+	padding-top: 350px;
+}
+
+.main-text{
+	padding-left: 40px;
+}
+
+.main-copy{
+	margin-top: 30px;
+	font-size: 3.0rem;
+	line-height: 4.0rem;
+}
+
+.sub-copy{
+	margin-top: 60px;
+	font-size: 1.6rem;
+	line-height: 2.8rem;
+	position: relative;
+}
+
+.sub-copy:after{
+	display: block;
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 1px;
+	left: 0;
+	bottom: -28px;
+	background-color: #e4e0de;
+}
+
+
+/*main*/
+h3{
+	font-size: 1.2rem;
+	line-height: 3.0rem;
+	text-align: center;
+}
+
+h3 span{
+	font-size: 2.0rem;
+	position: relative;
+}
+
+h3 span:after{
+	display: block;
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 1px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: -5px;
+	background-color: #e4e0de;
+}
+
+/*news*/
+.news{
+	padding-top: 200px;
+}
+
+.news figure{
+	width: 450px;
+	padding-top: 10px;
+}
+
+.news-ul{
+	font-size: 1.4rem;
+	width: 500px;
+	margin-left: 160px;
+	padding-top: 4px;
+}
+
+.news-ul li{
+	line-height: 3.6rem;
+	margin-bottom: 36px;
+}
+
+.news-ul li span{
+	display: block;
+	padding-left: 154px;
+}
+
+.news .inner-box{
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+}
+
+/*about*/
+.about{
+	margin-top: 200px;
+	background-image: url(../images/about-img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.about h3 span:after{
+	background-color: #5A4A4A;
+}
+
+.about p{
+	width: 560px;
+	margin: 60px auto 0 auto;
+	line-height: 2.8rem;
+}
+
+
+
+
+/*pickup-menu*/
+.pickup-menu{
+	padding-top: 140px;
+}
+
+.pickup-menu h3{
+	text-align: left;
+}
+
+.pickup-menu h3 span:after{
+	margin: 0;
+}
+
+.pickup-menu p{
+	margin-top: 60px;
+}
+
+.plates{
+	height: 440px;
+	width: 1035px;
+	margin: 60px 0 0 auto;
+	display: flex;
+	flex-direction: row;
+	background-color: #efeceb;
+	position: relative;
+	right: 0px;
+	top: 120px;
+}
+
+
+.morning{
+	margin-right: 60px;
+	padding-top: 10px;
+	position: relative;
+	left: 40px;
+	top:-120px;
+}
+
+.lunch{
+	position: relative;
+	left: 40px;
+	top:-120px;
+}
+
+figcaption{
+	margin-top: 16px;
+}
+
+.lunch figcaption{
+	padding-left: 10px;
+}
+
+
+/*access*/
+.access{
+	margin-top: 160px;
+	padding-top: 130px;
+}
+
+#maps{
+	margin-top: 64px;
+ 	height: 400px;
+	margin-bottom: 32px;
+}
+
+.access p{
+	margin-top: 60px;
+}
+
+
+/*footer*/
+footer{
+	margin-top: 120px;
+	background-color: #efeceb;
+}
+
+
+
+footer p{
+	text-align: center;
+	padding-bottom: 20px;
+}
