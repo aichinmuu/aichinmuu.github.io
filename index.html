@@ -35,7 +35,7 @@
           <ul>
             <li><a href="#">about</a></li>
             <li><a href="#">menu</a></li>
-            <li><a href="#">access</a></li>
+            <li><a href="access.html">access</a></li>
           </ul>
         </nav>
         </div>
@@ -66,7 +66,7 @@
   
   
 <main>
-	<section class="news">
+	<section class="news fadein">
       <h3><span>news</span><br>お知らせ</h3>
       <div class="inner-box">
         
@@ -88,7 +88,7 @@
   </section>
 	
 	
-	<section class="about">
+	<section class="about fadein">
       <div class="inner-box">
         <h3><span>about</span><br>カフェ・ド・パリとは</h3>
       
@@ -107,7 +107,7 @@
 	</section>
 	
 	
-	<section class="pickup-menu">
+	<section class="pickup-menu fadein">
       <div class="inner-box">
         <h3><span>pickup menu</span><br>おすすめメニュー</h3>
         
@@ -133,7 +133,7 @@
       
   </section>
 	
-	<section class="access">
+	<section class="access fadein">
       <div class="inner-box">
         <h3><span>access</span><br>アクセス</h3>
         
@@ -249,6 +249,30 @@ function initMap() {
   var marker = new google.maps.Marker(markerOptions);
 }
 
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.fadein').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object - 300){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});	
+	
 </script>
 	
 </body>
