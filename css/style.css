@@ -430,10 +430,6 @@ footer p{
 }
 
 
-#access .inner-box{
-	width: 1200px;
-	margin: 0 auto;
-}
 
 #access .access h3{
 	margin-top: 60px;
@@ -445,8 +441,10 @@ footer p{
 }
 
 #access .access{
-	margin-top: 160px;
 	padding: 0;
+	padding-top: 160px;
+	width: 1200px;
+	margin: 0 auto;
 }
 
 
